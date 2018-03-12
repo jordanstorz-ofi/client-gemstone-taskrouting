@@ -1,0 +1,24 @@
+div.main {
+    border: 1px solid gray;
+    width: 23rem;
+    box-sizing: border-box;
+    padding: 12px;
+    height: 33rem;
+}
+
+div.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 12px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button.logged-out {
+    border: 2px solid red;
+}

@@ -1,6 +1,7 @@
 <h2>USERS</h2>
-<div *ngIf="users.length">
+<div class="users-container" *ngIf="users.length">
   <app-single-user 
    *ngFor="let user of users" 
-   [user]="user"></app-single-user>
+   [user]="user"
+   (login)="onLogin($event)"></app-single-user>
 </div>

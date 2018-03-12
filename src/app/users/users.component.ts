@@ -27,4 +27,8 @@ export class UsersComponent implements OnInit {
     });
   }
 
+  onLogin(id): void{
+    this._userService.loginUser(id);
+  }
+
 }

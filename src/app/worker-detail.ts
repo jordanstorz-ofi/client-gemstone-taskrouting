@@ -4,4 +4,5 @@ export interface WorkerDetail {
     friendlyName: string;
     activityName: string;
     available: Boolean;
+    capability: string;
 }

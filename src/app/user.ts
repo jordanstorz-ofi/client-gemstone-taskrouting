@@ -1,7 +1,9 @@
 import { WorkerDetail } from './worker-detail';
+import { Reservation } from './reservation';
 
 export interface User {
-    orthofiId: number;
-    username: string;
-    workerDetail: WorkerDetail
+    UserId: number;
+    Username: string;
+    workerDetail: WorkerDetail;
+    reservations: Reservation[];
 }

@@ -1,3 +1,16 @@
 <div class="main">
-  <h2>{{user.Username}}</h2>
+  <div class="header">
+    <h2>User: {{user.Username}}</h2>
+    <button class="logged-out" (click)="loginUser()">Login</button>
+  </div>
+  <ul class="worker-detail" *ngIf="user.workerDetail.activityName">
+    <li>{{user.workerDetail.activityName}}</li>
+  </ul>
+  <ul class="reservations" *ngIf="user.reservations">
+    <li *ngFor="let reservation of user.reservations">
+      <app-gemstone-glance [gemstone]="reservation.task.taskAttributes.gemstone">
+      </app-gemstone-glance>
+
+    </li>
+  </ul>
 </div>

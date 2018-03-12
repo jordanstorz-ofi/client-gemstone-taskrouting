@@ -1,0 +1,7 @@
+div.gemstone {
+    height: 50px;
+    width: 50px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    margin-bottom: 12px;
+}

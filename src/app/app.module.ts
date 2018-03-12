@@ -8,14 +8,17 @@ import { UsersComponent } from './users/users.component';
 
 import { UserService } from './user.service';
 import { ConfigService } from './config.service';
+import { TaskRouterService } from './task-router.service';
 import { SingleUserComponent } from './single-user/single-user.component';
+import { GemstoneGlanceComponent } from './gemstone-glance/gemstone-glance.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    SingleUserComponent
+    SingleUserComponent,
+    GemstoneGlanceComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,8 @@ import { SingleUserComponent } from './single-user/single-user.component';
   ],
   providers: [
     ConfigService,
-    UserService
+    UserService,
+    TaskRouterService
   ],
   bootstrap: [AppComponent]
 })
