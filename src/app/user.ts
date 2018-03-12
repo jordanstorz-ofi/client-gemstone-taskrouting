@@ -1,5 +1,7 @@
+import { WorkerDetail } from './worker-detail';
+
 export interface User {
     orthofiId: number;
-    twilioWorkerSid: string;
     username: string;
+    workerDetail: WorkerDetail
 }
